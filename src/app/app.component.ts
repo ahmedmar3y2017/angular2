@@ -8,7 +8,9 @@ import {status} from './shared/shared'
  templateUrl :"app.component.html"
 })
 export class AppComponent  {
- 
+   
+
+   
    name :string = 'ahmed'; 
 address : string ="tanta";
 flag : boolean =true;
