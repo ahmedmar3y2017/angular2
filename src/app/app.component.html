@@ -27,7 +27,16 @@
 
 
 
-<button type="button" [class.btn]="flag" [disabled]="flag"  class="btn btn-primary">button</button>
+<button type="button" (click)="Alert()"  [disabled]="flag"  class="btn btn-primary">button</button>
+
+<br >
+
+<input type="text" [(ngModel)]="name">
+
+<br >
+<h5 >{{name}}</h5>
+
+
 
 
 

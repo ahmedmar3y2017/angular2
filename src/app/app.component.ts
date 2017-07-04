@@ -13,7 +13,7 @@ export class AppComponent  {
    
    name :string = 'ahmed'; 
 address : string ="tanta";
-flag : boolean =true;
+flag : boolean =false;
 arr : string[] =["ahmed" , "mohamed" , "eslam"];
 
 users: any[] =[
@@ -24,11 +24,13 @@ users: any[] =[
 
 ];
 status :status=status.available;
+Alert(){
 
+alert("Done");
 
-
+}
 getTitle():string{
-
+  
 return "Done ya man : ";
 
 }
