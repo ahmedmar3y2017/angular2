@@ -1,6 +1,23 @@
 <h1 >From product componet <br>
 <app-product></app-product> <br>
 -------------------
+<br>
+<input type="radio" (click)="format='shortDate'" >shortDate
+<input type="radio" (click)="format='fullDate'" >longDate
+<br>
+DAte is :{{birthdate | date:format}}
+<br>
+salary is : {{users[0].salary | currency :'EUR':true:'1.0-1' }}
+<br >
+string is : {{ value  | slice:start:end}}
+<h1>=====================  custome pipe  ===============================</h1>
+<br >
+<h5 >Custom pipe is :{{myvalue | basic : 2}} </h5>
+
+
+
+<button type="click" (click)="click()">Click</button>
+
 
 </h1>
 
@@ -36,8 +53,12 @@
 <br >
 <h5 >{{name}}</h5>
 
+<h5>=======================================================</h5>
+<ul >
+<li *ngFor="let user of listUser| filter: 'a' ">{{ user.id + " - "+user.username}}</li>
 
 
+</ul>
 
 
 

@@ -2,9 +2,10 @@ import {Component} from '@angular/core';
 
 
 @Component({
-
+moduleId :module.id,
 selector :'app-product' ,
-template: '<h3>Ahmed mohamed</h3>'
+templateUrl :'product.component.html',
+styleUrls : ['product.component.css']
 
 })
 export class productComponent{
